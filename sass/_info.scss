@@ -1,6 +1,6 @@
 
 .info {
-     height: 550px;
+     height: min-content;
   background-color: white;  
  
 }
@@ -27,6 +27,7 @@
          border-radius: 100px;
 
             @media screen and (max-width: 600px) {
+               font-size: 1.8rem;
                width: 100%;
                padding: 10px;
                border-radius: 50px;

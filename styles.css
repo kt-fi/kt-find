@@ -204,7 +204,7 @@ html {
 }
 
 .info {
-  height: 550px;
+  height: min-content;
   background-color: white;
 }
 
@@ -230,6 +230,7 @@ html {
 }
 @media screen and (max-width: 600px) {
   .info-text-content {
+    font-size: 1.8rem;
     width: 100%;
     padding: 10px;
     border-radius: 50px;
@@ -459,6 +460,12 @@ strong {
   padding: 0 0 0 20px;
   font-size: 1.7rem;
   font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  .carousel-text {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
 }
 
 img {
