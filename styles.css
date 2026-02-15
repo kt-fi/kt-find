@@ -519,12 +519,22 @@ img {
   height: 350px;
   background-color: white;
 }
+@media screen and (max-width: 600px) {
+  .footer {
+    border-radius: 0 50px 0 0;
+  }
+}
 
 .footer-container {
   height: 350px;
   background-color: #FFCC00;
   border-radius: 0 150px 0 0;
   height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .footer-container {
+    border-radius: 0 30px 0 0;
+  }
 }
 
 .main {
@@ -541,6 +551,15 @@ img {
   margin-bottom: 16px;
   font-family: "Bitter", sans-serif;
   margin-right: 150px;
+}
+@media screen and (max-width: 600px) {
+  .main-title {
+    margin-top: 30px;
+    font-size: 5rem;
+    margin-right: 0;
+    padding: 0% 0px;
+    margin-right: 0;
+  }
 }
 
 .main-text {
@@ -563,6 +582,11 @@ img {
   margin-left: 20px;
   background-color: white;
 }
+@media screen and (max-width: 600px) {
+  .main-text-image {
+    width: 70%;
+  }
+}
 
 .main-container {
   height: 550px;
@@ -575,6 +599,15 @@ img {
   font-family: "Arieal", sans-serif;
   padding-right: 100px;
 }
+@media screen and (max-width: 600px) {
+  .main-container {
+    height: max-content;
+    border-radius: 0 50px 50px 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+}
 
 .app-dload-image {
   width: 100%;
@@ -582,20 +615,23 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.app-dload-image-pic {
+.app-dload-image .app-dload-image-pic {
   width: 25%;
   height: auto;
   max-width: 100%;
   border-radius: 8px;
   background-color: white;
 }
+@media screen and (max-width: 600px) {
+  .app-dload-image .app-dload-image-pic {
+    width: 150%;
+  }
+}
 
 .main {
   background-color: #FFCC00;
   height: 500px;
 }
-
 .main-container {
   background-color: white;
   height: 100%;
@@ -605,7 +641,13 @@ img {
 @media screen and (max-width: 600px) {
   .main-container {
     margin-left: 0;
+    border-radius: 50px 0 0 50px;
   }
+}
+.main-container-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
