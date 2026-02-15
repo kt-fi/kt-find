@@ -12,6 +12,7 @@
     font-size: 5rem;
     margin-bottom: 16px;
     font-family: 'Bitter', sans-serif;
+    text-align: center;
 }
 
 .info-text {
@@ -19,7 +20,8 @@
       padding:  0 0 0 20px;
     
       display: flex;
-
+   font-weight: 300;
+   text-align: justify;
       &-content {
          display: inline-block;
          width: 60%;

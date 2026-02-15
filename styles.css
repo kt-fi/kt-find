@@ -215,12 +215,15 @@ html {
   font-size: 5rem;
   margin-bottom: 16px;
   font-family: "Bitter", sans-serif;
+  text-align: center;
 }
 
 .info-text {
   font-size: 1.7rem;
   padding: 0 0 0 20px;
   display: flex;
+  font-weight: 300;
+  text-align: justify;
 }
 .info-text-content {
   display: inline-block;
@@ -460,6 +463,7 @@ strong {
   padding: 0 0 0 20px;
   font-size: 1.7rem;
   font-weight: 300;
+  text-align: justify;
 }
 @media screen and (max-width: 600px) {
   .carousel-text {
