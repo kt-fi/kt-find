@@ -269,6 +269,10 @@ html {
   }
 }
 
+strong {
+  color: #6D9E51;
+}
+
 .scroller {
   background-color: #FFCC00;
   height: 500px;
