@@ -445,6 +445,11 @@ html {
   margin-bottom: 16px;
   font-family: "Bitter", sans-serif;
 }
+@media screen and (max-width: 600px) {
+  .carousel-title {
+    font-size: 4rem;
+  }
+}
 
 .carousel-text {
   padding: 0 0 0 20px;
