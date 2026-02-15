@@ -1,0 +1,98 @@
+
+
+.header {
+    height: 350px;
+    background-color: white;
+     color: white;
+  text-shadow:
+     -1px -1px 0 black,
+      1px -1px 0 black,
+     -1px  1px 0 black,
+      1px  1px 0 black;
+  font-size: 2rem;
+ 
+    font-family: "Mozilla Text", sans-serif;
+    font-weight: 600;
+
+    @media screen and (max-width: 600px) {
+        height: min-content;
+    }
+}
+
+.header-container {
+    height: 350px;
+    background: #FFCC00;
+    border-radius: 0 0 150px 0;
+    display: grid;
+    grid-template-columns: 30% 70%; 
+    grid-template-rows: 1fr;      
+
+     @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        border-radius: 0%;
+    }
+}
+
+.header-logo {
+    width: 100%;
+    margin-top: 130px;
+    /* optional: control height or min-width if needed */
+    top: -15%;
+    display: block;
+    position: relative;
+    right: -40%;
+
+      @media screen and (max-width: 600px) {
+        right: 0;
+        margin-top: 20px;
+        text-align: center;;
+        width: 100vw;
+
+    }
+       
+}
+
+.header-logo-image {
+    width: 100%;       /* fill the parent width */
+    height: auto;      /* maintain aspect ratio */
+    margin: 0;         /* remove offsets */
+    display: block;    /* remove inline spacing */
+    max-width: 100%;   /* ensure it doesn’t overflow parent */
+
+      @media screen and (max-width: 600px) {
+        width: 90vw;       /* adjust width for smaller screens */
+        margin-top: 50px; /* adjust top margin for smaller screens */
+        margin-left: 5vw; /* center the image on smaller screens */
+        
+    }
+    
+}
+
+.header-quote {
+    position: relative;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    top: 25%;
+    right: -30%;
+    height: min-content;
+    width: 55%;
+    border-radius: 20px;
+    font-size: 4rem;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        font-size: 1.5rem;
+        position: static;
+        padding-bottom: 20px;
+        
+    }
+    // background-color: rgb(48, 48, 48);
+    // padding: 20px;
+    // border: 1px solid white;
+    // box-shadow: 1px 5px 15px black;
+}

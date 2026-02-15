@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background: linear-gradient(to right, #FFCC00 0%, #FFCC00 50%, white 50%, white 100%); /* yellow → white */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
+

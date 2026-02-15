@@ -1,0 +1,581 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background: linear-gradient(to right, #FFCC00 0%, #FFCC00 50%, white 50%, white 100%); /* yellow → white */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  background: #ffcc00;
+  font-family: "Mozilla Text", sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .nav {
+    justify-content: center;
+    padding-top: 10px;
+    display: none;
+  }
+}
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 100px;
+  margin-right: 40px;
+  box-shadow: 1px 5px 15px;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s ease;
+}
+.li a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.li:hover {
+  background-color: rgb(46, 46, 46);
+}
+.li:hover a {
+  color: white;
+}
+.li:first-child {
+  border-radius: 100px 0 0 100px;
+}
+.li:last-child {
+  border-radius: 0 100px 100px 0;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: flex;
+  }
+}
+.hamburger div {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(49, 49, 49);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.header {
+  height: 350px;
+  background-color: white;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  font-size: 2rem;
+  font-family: "Mozilla Text", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: min-content;
+  }
+}
+
+.header-container {
+  height: 350px;
+  background: #FFCC00;
+  border-radius: 0 0 150px 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+}
+@media screen and (max-width: 600px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    border-radius: 0%;
+  }
+}
+
+.header-logo {
+  width: 100%;
+  margin-top: 130px;
+  /* optional: control height or min-width if needed */
+  top: -15%;
+  display: block;
+  position: relative;
+  right: -40%;
+}
+@media screen and (max-width: 600px) {
+  .header-logo {
+    right: 0;
+    margin-top: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+.header-logo-image {
+  width: 100%; /* fill the parent width */
+  height: auto; /* maintain aspect ratio */
+  margin: 0; /* remove offsets */
+  display: block; /* remove inline spacing */
+  max-width: 100%; /* ensure it doesn’t overflow parent */
+}
+@media screen and (max-width: 600px) {
+  .header-logo-image {
+    width: 90vw; /* adjust width for smaller screens */
+    margin-top: 50px; /* adjust top margin for smaller screens */
+    margin-left: 5vw; /* center the image on smaller screens */
+  }
+}
+
+.header-quote {
+  position: relative;
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 400;
+  top: 25%;
+  right: -30%;
+  height: min-content;
+  width: 55%;
+  border-radius: 20px;
+  font-size: 4rem;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .header-quote {
+    font-size: 1.5rem;
+    position: static;
+    padding-bottom: 20px;
+  }
+}
+
+.info {
+  height: 550px;
+  background-color: white;
+}
+
+.info-title {
+  padding: 20px;
+  font-weight: 900;
+  color: #222;
+  font-size: 5rem;
+  margin-bottom: 16px;
+  font-family: "Bitter", sans-serif;
+}
+
+.info-text {
+  font-size: 1.7rem;
+  padding: 0 0 0 20px;
+  display: flex;
+}
+.info-text-content {
+  display: inline-block;
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.info-text-image {
+  width: 30%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.info-container {
+  height: 550px;
+  background-color: #FFCC00;
+  border-radius: 0 100px 100px 0;
+  height: 100%;
+  padding-left: 155px;
+  padding-top: 55px;
+  width: 100%;
+  font-family: "Arieal", sans-serif;
+  padding-right: 100px;
+}
+
+.scroller {
+  background-color: #FFCC00;
+  height: 500px;
+}
+@media screen and (max-width: 600px) {
+  .scroller {
+    height: 580px;
+  }
+}
+
+.scroller-container {
+  background-color: white;
+  height: 100%;
+  border-radius: 150px 0 0 150px;
+  margin-left: 55px;
+}
+@media screen and (max-width: 600px) {
+  .scroller-container {
+    margin-left: 0;
+    border-radius: 50px 0 0 50px;
+  }
+}
+
+/* Carousel container */
+/* Carousel container */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 90%;
+  width: 100%;
+  margin-left: 75px;
+  transform: translateY(30px);
+}
+@media screen and (max-width: 600px) {
+  .carousel {
+    margin-left: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Slides */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.6s;
+  opacity: 0;
+  pointer-events: none;
+  /* Hide all slides by default */
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.carousel-slide.left {
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.carousel-slide.right {
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+/* Show active slide */
+.carousel-slide[style*="display: block"] {
+  display: block;
+  opacity: 1;
+}
+
+/* Carousel arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFCC00;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+#prevBtn {
+  left: 16px;
+}
+
+#nextBtn {
+  right: 16px;
+}
+
+.carousel-arrow:hover {
+  background: #ffd633;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .carousel {
+    max-width: 95vw;
+  }
+  .carousel-slide {
+    font-size: 1rem;
+    padding: 16px;
+    height: 120px;
+  }
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+}
+.carousel-container {
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  font-family: "Arieal", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .carousel-container {
+    flex-direction: column;
+  }
+}
+
+.carousel-box1 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  width: 70%;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .carousel-box1 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.carousel-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .carousel-box2 {
+    display: block;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.carousel-title {
+  padding: 20px;
+  font-weight: 900;
+  color: #222;
+  font-size: 5rem;
+  margin-bottom: 16px;
+  font-family: "Bitter", sans-serif;
+}
+
+.carousel-text {
+  padding: 0 0 0 20px;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+img {
+  padding: auto;
+  width: 60%;
+  height: 60%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  list-style: circle;
+  margin: 20px;
+}
+
+.list-item {
+  margin: 2px 0;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.mobile-image {
+  height: 400px;
+  width: 185px;
+  border-radius: 25px;
+  box-shadow: 2px 1px 15px black;
+  border: 4px solid rgb(78, 78, 78);
+  rotate: 15deg;
+}
+@media screen and (max-width: 600px) {
+  .mobile-image {
+    width: 25%;
+    height: auto;
+    rotate: 20deg;
+    transform: translate(50%, -85%);
+    border-radius: 15px;
+  }
+}
+.mobile-image:hover {
+  animation: mobileHover 0.3s forwards;
+}
+
+@keyframes mobileHover {
+  0% {
+    box-shadow: 2px 1px 15px black;
+    transform: translateY(0);
+  }
+  100% {
+    box-shadow: 2px 1px 20px black;
+    transform: translateY(-2px);
+  }
+}
+.footer {
+  height: 350px;
+  background-color: white;
+}
+
+.footer-container {
+  height: 350px;
+  background-color: #FFCC00;
+  border-radius: 0 150px 0 0;
+  height: 100%;
+}
+
+.main {
+  height: 550px;
+  background-color: white;
+}
+
+.main-title {
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #222;
+  font-size: 5rem;
+  margin-bottom: 16px;
+  font-family: "Bitter", sans-serif;
+  margin-right: 150px;
+}
+
+.main-text {
+  font-size: 1.7rem;
+  padding: 0 0 0 20px;
+  display: flex;
+}
+.main-text-content {
+  display: inline-block;
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.main-text-image {
+  width: 30%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: 20px;
+  background-color: white;
+}
+
+.main-container {
+  height: 550px;
+  background-color: #FFCC00;
+  border-radius: 0 100px 100px 0;
+  height: 100%;
+  padding-left: 155px;
+  padding-top: 55px;
+  width: 100%;
+  font-family: "Arieal", sans-serif;
+  padding-right: 100px;
+}
+
+.app-dload-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-dload-image-pic {
+  width: 25%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.main {
+  background-color: #FFCC00;
+  height: 500px;
+}
+
+.main-container {
+  background-color: white;
+  height: 100%;
+  border-radius: 100px 0 0 100px;
+  margin-left: 55px;
+}
+@media screen and (max-width: 600px) {
+  .main-container {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
