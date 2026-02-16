@@ -1,0 +1,21 @@
+.reviews {
+
+background-color: gray;
+    &-container {
+        display: flex;
+        background-color: #FFCC00;
+        flex-direction: column;
+        gap: 1.5rem;
+         text-align: center;
+           background-color: gray;
+            padding: 15px;
+            font-size: 3rem;
+            font-weight: 300;
+             font-family: 'Bitter', sans-serif;
+            width: 90%;
+            margin: 5%;
+            border-radius: 40px;
+               border: 3px solid rgb(86, 146, 62);
+               
+    }
+}
