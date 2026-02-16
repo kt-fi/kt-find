@@ -268,15 +268,15 @@ html {
   font-size: 3rem;
   font-weight: 600;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 .info-text-content-2 {
   background-color: #63A361;
   color: white;
 }
 .info-text-content-3 {
-  border: 3px solid #63A361;
-  background-color: white;
-  color: #63A361;
+  background-color: rgb(63, 63, 63);
+  color: white;
   margin: 20px 0 20px 0;
   padding: 15px;
   font-size: 3rem;
