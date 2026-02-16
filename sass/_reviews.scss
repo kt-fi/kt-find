@@ -1,21 +1,43 @@
 .reviews {
 
-background-color: gray;
+    background-color: #FFCC00;
+    height: 300px;
+
     &-container {
-        display: flex;
-        background-color: #FFCC00;
-        flex-direction: column;
-        gap: 1.5rem;
-         text-align: center;
-           background-color: gray;
-            padding: 15px;
-            font-size: 3rem;
-            font-weight: 300;
-             font-family: 'Bitter', sans-serif;
-            width: 90%;
-            margin: 5%;
-            border-radius: 40px;
-               border: 3px solid rgb(86, 146, 62);
-               
+        background-color: rgb(226, 226, 226);
+        height: 100%;
+        border-radius: 100px 0 0 100px;
+        margin: 0 25px 0 25px;
+
+         @media screen and (max-width: 600px) {
+            width: 100%;
+            border-radius: 0 ;
+            margin: 0;
+        }   
+
+
+
+    
     }
+
+    &-title {
+        padding: 20px;
+    
+    text-align: center;
+    font-weight: 900;
+    color: #222;
+    font-size: 5rem;
+    margin-bottom: 16px;
+    font-family: 'Bitter', sans-serif;
+
+         @media screen and (max-width: 600px) {
+            font-size: 5rem;
+        }
+    }
+}
+
+h2 {
+   
+
+
 }
