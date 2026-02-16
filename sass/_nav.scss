@@ -11,8 +11,9 @@
 
   @media screen and (max-width: 600px) {
     justify-content: center; // centered on smaller screens
+    align-items: center;
     padding-top: 10px;
-    display: none;
+  
   }
 
   &__container {
@@ -26,6 +27,14 @@
     border-radius: 100px;
     margin-right: 40px;
     box-shadow: 1px 5px 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    &__container {
+      width: 90%;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
   }
 }
 
@@ -70,17 +79,12 @@
 }
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  position: fixed;
-  cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    color: #222;
+    cursor: pointer;
 
-  @media screen and (max-width: 600px) {
-    display: flex; // show hamburger on smaller screens
-  }
+
 
   div {
     width: 100%;

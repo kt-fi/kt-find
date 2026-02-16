@@ -41,8 +41,8 @@ html {
 @media screen and (max-width: 600px) {
   .nav {
     justify-content: center;
+    align-items: center;
     padding-top: 10px;
-    display: none;
   }
 }
 .nav__container {
@@ -56,6 +56,13 @@ html {
   border-radius: 100px;
   margin-right: 40px;
   box-shadow: 1px 5px 15px;
+}
+@media screen and (max-width: 600px) {
+  .nav__container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
 
 .ul {
@@ -95,17 +102,9 @@ html {
 
 .hamburger {
   display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  position: fixed;
+  font-size: 2rem;
+  color: #222;
   cursor: pointer;
-}
-@media screen and (max-width: 600px) {
-  .hamburger {
-    display: flex;
-  }
 }
 .hamburger div {
   width: 100%;
@@ -251,6 +250,41 @@ html {
     display: none;
   }
 }
+.info-text-content {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  padding: 15px;
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Bitter", sans-serif;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #FFCC00;
+}
+.info-text-content, .info-text-content p {
+  margin-top: 10px;
+}
+.info-text-content-1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+.info-text-content-2 {
+  background-color: rgb(86, 146, 62);
+  color: white;
+}
+.info-text-content-3 {
+  border: 1px solid rgb(86, 146, 62);
+  margin: 20px 0 20px 0;
+  padding: 15px;
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Bitter", sans-serif;
+  width: 100%;
+}
+.info-text-content-4 {
+  background-color: rgb(255, 253, 253);
+}
 
 .info-container {
   height: 550px;
@@ -271,6 +305,12 @@ html {
     padding-left: 20px;
     border-radius: 0 30px 30px 0;
   }
+}
+
+.info-icon {
+  margin: 8px;
+  width: 30px;
+  height: 30px;
 }
 
 strong {
