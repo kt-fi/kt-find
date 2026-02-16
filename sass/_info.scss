@@ -71,12 +71,14 @@
          }
 
          &-2 {
-            background-color: rgb(86, 146, 62);
+            background-color: #63A361;
        color: white;;
          }
 
          &-3 {
-           border: 1px solid rgb(86, 146, 62);
+           border: 3px solid #63A361;
+           background-color: white;
+           color: #63A361;
             margin: 20px 0 20px 0;
             padding: 15px;
             font-size: 3rem;
@@ -86,7 +88,8 @@
          }
 
          &-4 {
-       background-color: rgb(255, 253, 253);
+       background-color: #63A361;
+       color: white;
                }      }
 }
 
