@@ -62,6 +62,12 @@
          
          &,p{
             margin-top: 10px;
+             font-family: "Mozilla Text", sans-serif;
+            font-weight: 100;
+         }
+
+         &, h3 {
+            font-family: 'Bitter', sans-serif;
          }
 
          &-1 {
@@ -72,15 +78,16 @@
          }
 
          &-2 {
-            background-color: #63A361;
-       color: white;;
+            background-color: white;
+       color: black;;
          }
 
          &-3 {
            
-           background-color: rgb(63, 63, 63);
-           color: #63A361;
+           background-color: #FFCC00;
+           color: black;
             margin: 20px 0 20px 0;
+            border: 1px solid black;
             padding: 15px;
             font-size: 3rem;
             font-weight: 300;
@@ -89,8 +96,8 @@
          }
 
          &-4 {
-       background-color: #63A361;
-       color: white;
+       background-color: white;
+       color: black;
                }      }
 }
 

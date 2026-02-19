@@ -263,6 +263,11 @@ html {
 }
 .info-text-content, .info-text-content p {
   margin-top: 10px;
+  font-family: "Mozilla Text", sans-serif;
+  font-weight: 100;
+}
+.info-text-content, .info-text-content h3 {
+  font-family: "Bitter", sans-serif;
 }
 .info-text-content-1 {
   font-size: 3rem;
@@ -271,13 +276,14 @@ html {
   margin-bottom: 20px;
 }
 .info-text-content-2 {
-  background-color: #63A361;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .info-text-content-3 {
-  background-color: rgb(63, 63, 63);
-  color: #63A361;
+  background-color: #FFCC00;
+  color: black;
   margin: 20px 0 20px 0;
+  border: 1px solid black;
   padding: 15px;
   font-size: 3rem;
   font-weight: 300;
@@ -285,8 +291,8 @@ html {
   width: 100%;
 }
 .info-text-content-4 {
-  background-color: #63A361;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .info-container {
@@ -448,7 +454,7 @@ strong {
   background-color: red;
   display: flex;
   flex-direction: row;
-  font-family: "Arieal", sans-serif;
+  font-family: "Mozilla Text", sans-serif;
 }
 @media screen and (max-width: 600px) {
   .carousel-container {
@@ -531,13 +537,14 @@ img {
   padding: 0;
   list-style: circle;
   margin: 20px;
-  font-weight: 600;
+  font-weight: 800;
+  width: 60%;
+  color: rgb(31, 31, 31);
 }
 
 .list-item {
   margin: 2px 0;
   font-size: 1.6rem;
-  color: #4d4d4d;
 }
 
 .mobile-image {

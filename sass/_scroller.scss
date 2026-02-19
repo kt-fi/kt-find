@@ -127,7 +127,7 @@
     display: flex;
     flex-direction: row;
     
-    font-family: "Arieal", sans-serif;
+     font-family: "Mozilla Text", sans-serif;
 
     @media screen and (max-width: 600px) {
         flex-direction: column;
@@ -207,13 +207,15 @@ img {
     padding: 0;
     list-style: circle;
     margin: 20px;
-    font-weight: 600;
+    font-weight: 800;
+    width: 60%;
+    color: rgb(31, 31, 31);;
 }
 
 .list-item {
     margin: 2px 0;
     font-size: 1.6rem;
-    color: #4d4d4d;
+   
 }
 
 .mobile-image {
